@@ -1,1 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Couple Challenge</title>
+
+<link rel="stylesheet"
+href="style.css">
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="background">
+
+<div class="blur blur1"></div>
+
+<div class="blur blur2"></div>
+
+<div class="blur blur3"></div>
+
+<div class="stars"></div>
+
+</div>
+
+<div id="loading">
+
+<div class="loader"></div>
+
+<h2>Preparando la ruleta...</h2>
+
+</div>
+
+<div id="app">
+
+<header>
+
+<div class="logo">
+
+❤️
+
+</div>
+
+<h1>
+
+Couple Challenge
+
+</h1>
+
+<p>
+
+Cada giro puede cambiar el día...
+
+</p>
+
+</header>
+
+<section class="home-card">
+
+<div class="card">
+
+<div class="top">
+
+<span>
+
+🔥 Racha
+
+</span>
+
+<h2 id="streak">
+
+0 días
+
+</h2>
+
+</div>
+
+<div class="middle">
+
+<div class="wheel-box">
+
+<div class="pointer"></div>
+
+<div id="wheel">
+
+<div class="wheel-center">
+
+<i class="fa-solid fa-heart"></i>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="bottom">
+
+<button
+id="spinButton">
+
+<i class="fa-solid fa-dice"></i>
+
+Girar reto
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<section
+id="challengeContainer"
+class="hidden">
+
+<div class="challenge-card">
+
+<h2>
+
+🎯 Reto del día
+
+</h2>
+
+<p id="challengeText">
+
+Aquí aparecerá el reto.
+
+</p>
+
+<div class="difficulty">
+
+<span id="difficulty">
+
+🟢 Fácil
+
+</span>
+
+</div>
+
+<div class="buttons">
+
+<button
+id="success">
+
+✅ Lo logramos
+
+</button>
+
+<button
+id="fail">
+
+❌ Alguien falló
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Modal de reto -->
+
+<div id="challengeModal" class="modal hidden">
+
+    <div class="modal-content">
+
+        <div class="modal-icon">
+            ❤️
+        </div>
+
+        <h2 id="modalTitle">
+            ¡Nuevo reto!
+        </h2>
+
+        <p id="modalChallenge">
+            Aquí aparecerá el reto seleccionado por la ruleta.
+        </p>
+
+        <div class="modal-buttons">
+
+            <button id="completeBtn">
+                ✅ Lo logramos
+            </button>
+
+            <button id="failedBtn">
+                ❌ Alguien falló
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Modal de premio -->
+
+<div id="rewardModal" class="modal hidden">
+
+    <div class="modal-content">
+
+        <div class="modal-icon">
+            🎁
+        </div>
+
+        <h2>
+            ¡Felicidades!
+        </h2>
+
+        <p>
+            Han cumplido el reto.
+        </p>
+
+        <button id="spinReward">
+
+            🎁 Girar ruleta de premios
+
+        </button>
+
+    </div>
+
+</div>
+
+<!-- Modal de penitencia -->
+
+<div id="punishmentModal" class="modal hidden">
+
+    <div class="modal-content">
+
+        <div class="modal-icon">
+            😈
+        </div>
+
+        <h2>
+
+            ¡Ups!
+
+        </h2>
+
+        <p>
+
+            Alguien falló el reto.
+
+        </p>
+
+        <button id="spinPunishment">
+
+            😈 Girar ruleta de penitencias
+
+        </button>
+
+    </div>
+
+</div>
+
+<footer>
+
+    <p>
+
+        ❤️ Couple Challenge ❤️
+
+    </p>
+
+    <small>
+
+        Un reto diferente cada día.
+
+    </small>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+  </html>
+
 
